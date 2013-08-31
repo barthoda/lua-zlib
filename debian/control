@@ -1,6 +1,6 @@
 Source: lua-zlib
 Priority: extra
-Maintainer: vagrant <tech@squixa.com>
+Maintainer: Squixa Support <support@squixa.com>
 Build-Depends: debhelper (>= 8.0.0), cmake
 Standards-Version: 3.9.2
 Section: libs
