@@ -11,7 +11,7 @@ MACOSX_VERSION = 10.4
 CMOD = zlib.so
 OBJS = lua_zlib.o
 
-LIBS = -lz -llua -lm
+LIBS = -lz -llua5.1 -lm
 WARN = -Wall -pedantic
 
 BSD_CFLAGS  = -O2 -fPIC $(WARN) $(INCDIR) $(DEFS)
@@ -31,11 +31,7 @@ LDFLAGS = $(MYLDFLAGS)
 
 .PHONY: all clean install none linux bsd macosx
 
-all:
-	@echo "Usage: $(MAKE) <platform>"
-	@echo "  * linux"
-	@echo "  * bsd"
-	@echo "  * macosx"
+all: linux
 
 install: $(CMOD)
 	cp $(CMOD) $(LUACPATH)
