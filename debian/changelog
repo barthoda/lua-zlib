@@ -1,0 +1,5 @@
+lua-zlib (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- vagrant <tech@squixa.com>  Sat, 31 Aug 2013 00:57:25 +0000
