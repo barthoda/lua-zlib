@@ -8,7 +8,7 @@ Description: <short summary of the patch>
  lua-zlib (1.0.0-1) unstable; urgency=low
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
-Author: vagrant <tech@squixa.com>
+Author: Squixa Support <support@squixa.com>
 
 ---
 The information above should follow the Patch Tagging Guidelines, please
