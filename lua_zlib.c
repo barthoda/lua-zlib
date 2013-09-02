@@ -20,7 +20,6 @@
 typedef uLong (*checksum_t)        (uLong crc, const Bytef *buf, uInt len);
 typedef uLong (*checksum_combine_t)(uLong crc1, uLong crc2, z_off_t len2);
 
-
 static int lz_deflate(lua_State *L);
 static int lz_deflate_delete(lua_State *L);
 static int lz_inflate_delete(lua_State *L);
