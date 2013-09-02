@@ -34,8 +34,8 @@ LDFLAGS = $(MYLDFLAGS)
 all: linux
 
 install: $(CMOD)
-	mkdir -p debian/$(LUACPATH)
-	cp $(CMOD) debian/$(LUACPATH)
+	mkdir -p $(DESTDIR)/$(LUACPATH)
+	cp $(CMOD) $(DESTDIR)/$(LUACPATH)
 
 uninstall:
 	rm $(LUACPATH)/zlib.so
