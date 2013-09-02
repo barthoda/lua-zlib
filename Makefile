@@ -1,7 +1,7 @@
 # This Makefile is based on LuaSec's Makefile. Thanks to the LuaSec developers.
 # Inform the location to intall the modules
-LUAPATH  = /usr/share/lua/5.1
-LUACPATH = /usr/lib/lua/5.1
+LUAPATH  = usr/share/lua/5.1
+LUACPATH = usr/lib/lua/5.1
 INCDIR   = -I/usr/include/lua5.1
 LIBDIR   = -L/usr/lib
 
@@ -34,7 +34,8 @@ LDFLAGS = $(MYLDFLAGS)
 all: linux
 
 install: $(CMOD)
-	cp $(CMOD) $(LUACPATH)
+	mkdir -p debian/$(LUACPATH)
+	cp $(CMOD) debian/$(LUACPATH)
 
 uninstall:
 	rm $(LUACPATH)/zlib.so
