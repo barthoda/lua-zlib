@@ -1,7 +1,7 @@
 Source: lua-zlib
 Priority: extra
 Maintainer: Squixa Support <support@squixa.com>
-Build-Depends: debhelper (>= 8.0.0), cmake
+Build-Depends: debhelper (>= 8.0.0), cmake, liblua5.1-0-dev, zlib1g-dev
 Standards-Version: 3.9.2
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
